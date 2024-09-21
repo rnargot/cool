@@ -1,4 +1,36 @@
+.header {
+    width: 80%;            /* Set a width, adjust as needed */
+    margin: 0 auto;        /* Horizontally centers the div */
+    text-align: center;    /* Centers text or inner content, if needed */
+    padding: 20px 0;       /* Adds some padding (optional) */
+    position: relative; 
+}
 .title {
     font-family: 'ZenKaku';
-    font-size: 36pt;
+    font-size: 54pt;
   }
+  .sub {
+    font-family: 'ZenKaku';
+    font-size: 18pt;
+  }
+  .link {
+    font-family: 'ZenKaku';
+    font-size: 12pt;
+  }
+.text {
+    font-family: 'W95';
+}
+.category {
+    border: none;
+    outline: none; /* Removes the focus outline */
+    padding: 10px 20px;        /* Optional: Customize padding */
+    cursor: pointer;  
+    background-color: aliceblue;
+}
+.work {
+    background-color: white;
+    border: none;
+    outline: none; /* Removes the focus outline */
+    padding: 10px 20px;        /* Optional: Customize padding */
+    cursor: pointer;  
+}
