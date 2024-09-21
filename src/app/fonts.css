@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'ZenKaku';
+    src:
+      url('./fonts/ZenKaku/ZenKaku.ttf') format('woff2 supports variations');
+    font-weight: 300 900;
+  }
