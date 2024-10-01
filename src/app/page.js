@@ -14,6 +14,10 @@ import disco from './components/disco.png'
 import haus from './components/haus.png'
 import tummy from './components/tummy.png'
 import music from './components/music.png'
+import internet from './components/internet.png'
+import podcast from './components/podcast.png'
+import mic from './components/mic.png'
+import martini from './components/martini.png'
 import websites from './components/websites.png'
 import Popup from './components/Popup.js';
 
@@ -21,6 +25,9 @@ export default function Home() {
   const [buttonPopup, setButtonPopup] = useState(false);
   const [buttonPopup1, setButtonPopup1] = useState(false);
   const [buttonPopup2, setButtonPopup2] = useState(false);
+  const [buttonPopup3, setButtonPopup3] = useState(false);
+  const [buttonPopup4, setButtonPopup4] = useState(false);
+  const [buttonPopup5, setButtonPopup5] = useState(false);
   return (
     <div className='container'>
     <div className='main'>
@@ -146,15 +153,98 @@ export default function Home() {
                     <div className='text'>archive</div>
             </button>
             <div className='child child-1'>
-            <Popup  trigger={buttonPopup2} setTrigger={setButtonPopup2} title = "girlies" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
+            <Popup  trigger={buttonPopup2} setTrigger={setButtonPopup2} title = "discofish course" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
                 <Image className='logo'
                           src={visual}
                           alt="folder Logo"
                             width={50}
                             height={50}
                           />
+                <div className='text'>workshop</div>
+              </Link>}> 
+            </Popup>
+          </div>
+        </div>
+        <div className="archive">
+            <button className='category' onClick={() => setButtonPopup3(true)}>
+            <Image className='logo'
+                    src={mic}
+                    alt="folder Logo"
+                      width={50}
+                      height={50}
+                    />
+                    <div className='text'>podcast</div>
+            </button>
+            <div className='child child-1'>
+            <Popup  trigger={buttonPopup3} setTrigger={setButtonPopup3} title = "girlies" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
+                <Image className='logo'
+                          src={podcast}
+                          alt="folder Logo"
+                            width={50}
+                            height={50}
+                          />
                 <div className='text'>LTP</div>
               </Link>}> 
+            </Popup>
+          </div>
+        </div>
+        <div className="archive">
+            <button className='category' onClick={() => setButtonPopup4(true)}>
+            <Image className='logo'
+                    src={internet}
+                    alt="folder Logo"
+                      width={50}
+                      height={50}
+                    />
+                    <div className='text'>spotlight</div>
+            </button>
+            <div className='child child-1'>
+            <Popup  trigger={buttonPopup4} setTrigger={setButtonPopup4} title = "internet spotlight" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
+                <Image className='logo'
+                          src={podcast}
+                          alt="folder Logo"
+                            width={50}
+                            height={50}
+                          />
+                <div className='text'>websites i love</div>
+              </Link>}> 
+            </Popup>
+          </div>
+        </div>
+
+        <div className="archive">
+            <button className='category' onClick={() => setButtonPopup5(true)}>
+            <Image className='logo'
+                    src={martini}
+                    alt="folder Logo"
+                      width={50}
+                      height={50}
+                    />
+                    <div className='text'>events</div>
+            </button>
+            <div className='child child-1'>
+            <Popup  trigger={buttonPopup5} setTrigger={setButtonPopup5} title = "upcoming events" text = {
+              <div className='project-container'>
+                <Link className='project' href={ "/vanish" } onClick={() => router.reload()}>          
+                <Image className='logo'
+                          src={disco}
+                          alt="folder Logo"
+                            width={50}
+                            height={50}
+                          />
+                <div className='text'>discofish gallery</div>
+              </Link>
+              <Link className='project' href={ "/vanish" } onClick={() => router.reload()}>          
+                <Image className='logo'
+                          src={visual}
+                          alt="folder Logo"
+                            width={50}
+                            height={50}
+                          />
+                <div className='text'>workshops</div>
+              </Link>
+              </div>
+            }> 
             </Popup>
           </div>
         </div>
