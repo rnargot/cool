@@ -4,7 +4,7 @@ import './page.css'
 
 export default async function about() {
     const data = await fetch(
-        "https://notion-api.splitbee.io/v1/page/manifesto-112167d0d4cc805d8423f6ee341fbe7d"
+        "https://notion-api.splitbee.io/v1/page/curriculum-bf3b473949b64fbb9312b24d4863aba9"
       ).then(res => res.json());
     const blockMap = {props: {
         blockMap: data
@@ -13,7 +13,7 @@ export default async function about() {
     console.log({data})
   return (
     <main className='main'>
-      <div className='title'> about brain worms</div>
+      <div className='title'> curriculum </div>
       <div>
       <NotionRenderer blockMap={data}/>
     </div>
