@@ -11,6 +11,7 @@
     border-radius: 0;
     background: #C0C0C0;
     width: 30vw;
+    
 }
 .card-tertiary .card-header {
     background: #000181;
@@ -35,6 +36,15 @@
 }
 .card-footer {
     padding: 10px 7px;
+ }
+ .project-container {
+    display: flex;
+    justify-content:left; /* Adjusts spacing between items */
+    align-items: center;
+ }
+ .project {
+    padding-right: 1vw;
+    padding-left: 1vw;
  }
  .btn {
     position: relative;
