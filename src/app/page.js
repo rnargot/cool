@@ -64,7 +64,7 @@ export default function Home() {
                           />
                 <div className='text'>vanish</div>
               </Link>
-              <Link className= 'project' href={ "/vanish" } onClick={() => router.reload()}>          
+              <Link className= 'project' href={ "/ear" } onClick={() => router.reload()}>          
                 <Image
                           src={earico}
                           alt="folder Logo"
