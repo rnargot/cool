@@ -33,12 +33,12 @@ export default function Home() {
     <div className='main'>
     <div>
       <div className="header">
-        <div className="title">
+        {/* <div className="title">
           brain worms
-        </div>
-        <div className="sub">
+        </div> */}
+        {/* <div className="sub">
           an internet art collective
-        </div>
+        </div> */}
       </div>
       
       <div className="works">
@@ -150,17 +150,17 @@ export default function Home() {
                       width={50}
                       height={50}
                     />
-                    <div className='text'>archive</div>
+                    <div className='text'>tech eco</div>
             </button>
             <div className='child child-1'>
-            <Popup  trigger={buttonPopup2} setTrigger={setButtonPopup2} title = "discofish course" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
+            <Popup  trigger={buttonPopup2} setTrigger={setButtonPopup2} title = "ongoing updates" text = {        <Link href={ "/day0" } onClick={() => router.reload()}>          
                 <Image className='logo'
                           src={visual}
                           alt="folder Logo"
                             width={50}
                             height={50}
                           />
-                <div className='text'>workshop</div>
+                <div className='text'>day 0</div>
               </Link>}> 
             </Popup>
           </div>

@@ -1,0 +1,41 @@
+.main {
+  width: 50vw;
+  display: flex;
+  /* flex-direction: row; */
+  height: 100vh;
+  width: 100vw; 
+}
+.title {
+    font-family: 'ZenKaku';
+    font-size: 36pt;
+  }
+.text {
+  font-family: 'ZenKaku';
+  font-size: 12pt;
+  width: 50vw;
+}
+.text-1 {
+  font-family: 'ZenKaku';
+  font-size: 24pt;
+}
+.video {
+  width:50vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.text-pre {
+  white-space: pre-wrap; /* Preserve whitespace but allow wrapping */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+  overflow-wrap: break-word;
+  font-family: 'ZenKaku';
+  font-size: 12pt;
+  width: 75%;
+}
+.block1 {
+width: 50vw;
+}
+.block {
+  margin-left: 5vw;
+  overflow-y: scroll;
+  flex-grow: 1;
+}

@@ -10,6 +10,7 @@ export default async function spotlight() {
   return (
     <main className='main'>
       <div className='title'> ear.cool</div>
+      <a className='main' href="https://ear.cool/"> go to ear </a>
       <div>
       <NotionRenderer blockMap={data}/>
     </div>
