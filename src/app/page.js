@@ -64,7 +64,7 @@ export default function Home() {
                           />
                 <div className='text'>vanish</div>
               </Link>
-              <Link className= 'project' href={ "/ear" } onClick={() => router.reload()}>          
+              <Link className= 'project' href={ "/vanish" } onClick={() => router.reload()}>          
                 <Image
                           src={earico}
                           alt="folder Logo"
@@ -199,7 +199,7 @@ export default function Home() {
                     <div className='text'>spotlight</div>
             </button>
             <div className='child child-1'>
-            <Popup  trigger={buttonPopup4} setTrigger={setButtonPopup4} title = "internet spotlight" text = {        <Link href={ "/spotlight" } onClick={() => router.reload()}>          
+            <Popup  trigger={buttonPopup4} setTrigger={setButtonPopup4} title = "internet spotlight" text = {        <Link href={ "/vanish" } onClick={() => router.reload()}>          
                 <Image className='logo'
                           src={podcast}
                           alt="folder Logo"
@@ -234,7 +234,7 @@ export default function Home() {
                           />
                 <div className='text'>discofish gallery</div>
               </Link>
-              <Link className='project' href={ "/workshop" } onClick={() => router.reload()}>          
+              <Link className='project' href={ "/vanish" } onClick={() => router.reload()}>          
                 <Image className='logo'
                           src={visual}
                           alt="folder Logo"
